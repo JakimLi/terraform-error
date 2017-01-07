@@ -6,4 +6,4 @@ variable "subnets" {
   type = "list"
 }
 
-variable "snapshot" { }
+variable "snapshot_id" { }

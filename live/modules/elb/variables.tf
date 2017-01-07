@@ -1,7 +1,7 @@
-variables "subnets" {
+variable "subnets" {
   type = "list"
 }
 
-variables "security_groups" {
+variable "security_groups" {
   type = "list"
 }
