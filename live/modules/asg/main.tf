@@ -7,7 +7,7 @@ resource "aws_autoscaling_group" "my_asg" {
   min_size = 1
   vpc_zone_identifier = ["${var.subnets}"]
   wait_for_elb_capacity = true
-  wait_for_capacity_timeout = "15m"
+  wait_for_capacity_timeout = "6m"
   min_elb_capacity = 1
   launch_configuration = "${var.my_lc_id}"
   load_balancers = ["${var.my_elb_name}"]

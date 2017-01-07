@@ -1,0 +1,21 @@
+1 error(s) occurred:
+
+* apply operation: Real and shadow states do not match! Real state:
+
+<no state>
+module.my_asg:
+  <no state>
+module.my_elb:
+  <no state>
+module.my_lc:
+  aws_launch_configuration.my_lc: (1 deposed)
+    ID = <not created>
+    Deposed ID 1 = terraform-001b33024ddb72ca0027348812
+
+    Dependencies:
+      data.template_file.userdata
+
+Shadow state:
+
+%!s(PANIC=runtime error: invalid memory address or nil pointer dereference)
+

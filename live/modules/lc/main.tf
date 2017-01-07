@@ -10,12 +10,12 @@ resource "aws_launch_configuration" "my_lc" {
   lifecycle {
     create_before_destroy = true
   }
-  image_id = "ami-9be6f38c"
+  image_id = "ami-28cff44b"
   instance_type = "t2.micro"
   security_groups = ["${var.security_groups}"]
-  iam_instance_profile = "profile-name"
   user_data = "${data.template_file.userdata.rendered}"
   associate_public_ip_address = false
+  key_name = "sydney"
 
   root_block_device {
     volume_size = 20
